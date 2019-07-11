@@ -307,9 +307,6 @@ sys.vendor.shutdown.waittime=500
 # Chipset
 ro.soc.manufacturer=QTI
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Stagefright
 debug.stagefright.c2inputsurface=-1
 
