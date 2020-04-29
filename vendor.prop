@@ -321,6 +321,9 @@ ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.use_smart_90_for_video=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
+# Telephony network
+ro.telephony.default_network=33,33
+
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs
