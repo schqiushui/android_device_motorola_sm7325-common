@@ -83,6 +83,9 @@ on init
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 on early-fs
     start vold
 
