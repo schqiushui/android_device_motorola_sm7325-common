@@ -15,6 +15,17 @@ genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon1/name  
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon2/name       u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon3/name       u:object_r:vendor_sysfs_graphics:s0
 
+# Graphics Perfmgr
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_encoder_mask         u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state                u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_timeout_ms           u:object_r:vendor_sysfs_graphics:s0
+
+genfscon sysfs /devices/platform/soc/2c00000.qcom,kgsl-3d0                           u:object_r:vendor_sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu-cpu-llcc-bw                        u:object_r:vendor_sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpu-llcc-ddr-bw                        u:object_r:vendor_sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                                  u:object_r:vendor_sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                          u:object_r:vendor_sysfs_msm_subsys:s0
+
 # Health
 genfscon sysfs /devices/platform/soc/soc:mmi,charger/power_supply/mmi_battery        u:object_r:vendor_sysfs_battery_supply:s0
 
@@ -52,6 +63,9 @@ genfscon sysfs /devices/virtual/touchscreen                                     
 genfscon sysfs /devices/platform/soc/990000.i2c/i2c-0/0-005d/touchscreen        u:object_r:vendor_sysfs_touchpanel:s0
 genfscon sysfs /devices/platform/soc/a94000.i2c/i2c-2/2-0049/touchscreen        u:object_r:vendor_sysfs_touchpanel:s0
 genfscon sysfs /devices/platform/soc/998000.spi/spi_master/spi0/spi0.0/touchscreen			u:object_r:vendor_sysfs_touchpanel:s0
+
+# UFS Perfmgr
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkgate_enable               u:object_r:vendor_sysfs_scsi_host:s0
 
 # Vibrator
 genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-005a/leds/vibrator      u:object_r:sysfs_vibrator:s0
