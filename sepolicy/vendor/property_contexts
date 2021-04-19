@@ -35,5 +35,8 @@ persist.vendor.hardware.fingerprint            u:object_r:vendor_mot_fingerprint
 vendor.hw.fps.ident                            u:object_r:vendor_mot_fingerprint_prop:s0
 vendor.hw.fingerprint.status                   u:object_r:vendor_mot_fingerprint_prop:s0
 
+# Power
+vendor.powerhal.           u:object_r:vendor_power_prop:s0
+
 # Secure Element
 persist.vendor.se.reset                        u:object_r:vendor_secure_element_prop:s0
