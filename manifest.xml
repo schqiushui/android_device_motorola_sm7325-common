@@ -581,5 +581,14 @@
         </interface>
         <fqname>@1.0::IQspmhal/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.zui.hardware.ifaa</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IIFAADevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <kernel target-level="5"/>
 </manifest>
