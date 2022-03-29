@@ -60,7 +60,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=$(PRODUCT_DEVICE)
 TARGET_KERNEL_CLANG_VERSION := latest
 TARGET_KERNEL_SOURCE := kernel/motorola/sm8350
-TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/lineage_moto-lahaina.config
+TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config vendor/lineage_moto-lahaina.config
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
