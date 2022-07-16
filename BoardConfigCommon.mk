@@ -131,6 +131,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     vendor/aosp/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+ODM_MANIFEST_FILES += $(COMMON_PATH)/manifest_odm.xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
