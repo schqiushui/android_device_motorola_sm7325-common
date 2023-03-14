@@ -1,3 +1,5 @@
+type vendor_sysfs_udfps, sysfs_type, fs_type;
+
 allow hal_fingerprint_default {
   etsd_device
   egis_device
@@ -18,6 +20,7 @@ allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_sysfs_fingerprint:{ file lnk_file } read;
 allow hal_fingerprint_default vendor_data_tzstorage_file:dir rw_dir_perms;
 allow hal_fingerprint_default vendor_data_tzstorage_file:file create_file_perms;
+allow hal_fingerprint_default vendor_sysfs_udfps:file rw_file_perms;
 
 binder_call(hal_fingerprint_default, hal_fingerprint_default)
 binder_call(hal_fingerprint_default, vendor_hal_perf_default)
