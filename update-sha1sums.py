@@ -20,8 +20,8 @@ import os
 import sys
 from hashlib import sha1
 
-device='sm7325-common'
-vendor='motorola'
+device = 'sm8350-common'
+vendor = 'motorola'
 
 with open('proprietary-files.txt', 'r') as f:
     lines = f.read().splitlines()
