@@ -314,9 +314,8 @@ ro.vendor.sensors.glance_approach=false
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
-# SOC
+# Chipset
 ro.soc.manufacturer=QTI
-ro.soc.model=SM7325
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
