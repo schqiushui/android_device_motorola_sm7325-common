@@ -309,6 +309,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+#NGA
+PRODUCT_PACKAGES += \
+    NgaResources \
+    nga
+
 # OMX
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor \
