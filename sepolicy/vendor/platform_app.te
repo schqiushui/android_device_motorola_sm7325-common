@@ -3,3 +3,6 @@ binder_call(platform_app, hal_ifaa_default)
 
 allow platform_app vendor_hal_soter_hwservice:hwservice_manager find;
 binder_call(platform_app, vendor_hal_soter_qti)
+
+dontaudit platform_app default_android_hwservice:hwservice_manager { find };
+dontaudit platform_app hal_power_service:service_manager { find };
