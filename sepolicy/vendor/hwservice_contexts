@@ -3,7 +3,7 @@ motorola.hardware.camera.desktop::ICameraDesktop                        u:object
 motorola.hardware.camera.imgtuner::IImageTuning                         u:object_r:hal_camera_hwservice:s0
 motorola.hardware.camera.provider::ICameraProvider                      u:object_r:hal_camera_hwservice:s0
 
-# Dolby DMS
+# Dolby
 vendor.dolby.hardware.dms::IDms                                         u:object_r:hal_dms_hwservice:s0
 
 # Fingerprint
