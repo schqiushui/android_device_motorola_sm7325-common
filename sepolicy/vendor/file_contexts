@@ -46,6 +46,7 @@
 /sys/firmware/devicetree/base/chosen(/.*)?              u:object_r:sysfs_dt_chosen:s0
 
 # Dolby DMS
+/data/vendor/dolby(/.*)?                                                u:object_r:vendor_audio_data_file:s0
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service       u:object_r:hal_dms_default_exec:s0
 
 # Fingerprint
