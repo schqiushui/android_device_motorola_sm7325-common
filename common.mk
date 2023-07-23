@@ -304,9 +304,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail_vendor \
     libavservices_minijail.vendor \
-    libcodec2_hidl@1.1.vendor
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor
 
 # MotoActions
 PRODUCT_PACKAGES += \
