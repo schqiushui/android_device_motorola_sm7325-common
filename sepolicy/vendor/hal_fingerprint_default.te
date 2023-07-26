@@ -31,3 +31,6 @@ allow hal_fingerprint_default fingerprintd_data_file:dir { rw_dir_perms };
 allow hal_fingerprint_default fingerprintd_data_file:file { create_file_perms };
 
 hal_client_domain(hal_fingerprint_default, hal_power)
+hal_client_domain(hal_fingerprint_default, hal_health);
+allow hal_fingerprint_default hal_health_hwservice:hwservice_manager find;
+
