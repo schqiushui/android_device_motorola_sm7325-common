@@ -144,7 +144,7 @@ ro.bluetooth.a2dp_offload.supported=true
 vendor.qcom.bluetooth.soc=moselle
 
 # Camera
-camera.disable_zsl_mode=1
+camera.disable_zsl_mode=true
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.motorola.camera3,org.lineageos.aperture
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.camera3,org.lineageos.aperture
 
