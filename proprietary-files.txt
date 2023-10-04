@@ -237,6 +237,7 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display - HDR
 vendor/etc/hdr_tm_config.xml
+vendor/lib64/libhdr_stub.so
 vendor/lib64/libhdr_tm.so
 
 # Display - HWC
