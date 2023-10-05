@@ -731,7 +731,7 @@ vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # RIL
 -product/app/uimgbaservice/uimgbaservice.apk
--system_ext/app/QtiTelephony/QtiTelephony.apk
+-system_ext/app/QtiTelephony/QtiTelephony.apk|8eab7a7ec6ec1c5e51876e102fc91a3818c3feab
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -vendor/app/IWlanService/IWlanService.apk
@@ -747,6 +747,7 @@ system_ext/etc/permissions/qti_permissions.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
 system_ext/framework/qcrilhook.jar
+system_ext/framework/qti-telephony-common.jar|2fb8fa3af66cc7a54fd2bfb085d5e0be3a91035a
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/hw/qcrilNrd
