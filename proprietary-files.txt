@@ -720,8 +720,8 @@ vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
-# Radio - IMS (APK) - from patched source
--system_ext/priv-app/ims/ims.apk|410414153e3b4b85c5e9f5b6f5c4fc6b98c2994b
+# Radio - IMS (APK) - from patched source DUBAI 13_T1RD33.116-33-5
+-system_ext/priv-app/ims/ims.apk|c675c9d00ec6b14627ed734f6d1d11df3e55053b
 
 # RIL
 -product/app/uimgbaservice/uimgbaservice.apk
