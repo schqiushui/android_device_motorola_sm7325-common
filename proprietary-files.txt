@@ -887,6 +887,9 @@ vendor/bin/netmgrd|85718e6eac96b393848a4c70f3dc31acbb2f4374
 # Radio - IMS (APK) - from patched source
 -system_ext/priv-app/ims/ims.apk|410414153e3b4b85c5e9f5b6f5c4fc6b98c2994b
 
+# RIL - Data - from tundra_cn 13 T1SJC33.51-19-7
+vendor/bin/netmgrd|db68fa2ac739bb74ac35fa80ddd7147dd72a34cb
+
 # RIL - IMS
 -system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
