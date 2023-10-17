@@ -1,20 +1,20 @@
 [
   {
-    "repository" : "kernel_motorola_sm7325",
-    "target_path" : "kernel/motorola/sm7325",
-    "remote" : "pixel-devices",
-    "branch" : "thirteen"
+    "repository" : "schqiushui/android_kernel_motorola_sm8350",
+    "target_path" : "kernel/motorola/sm8350",
+    "remote" : "github",
+    "branch" : "thirteen-plus"
   },
   {
-    "repository": "vendor_motorola_sm7325-common",
-    "target_path": "vendor/motorola/sm7325-common",
-    "remote": "pixel-devices-blobs",
+    "repository": "PixelExperiencePlus/PixelExperience_hardware_motorola",
+    "target_path": "hardware/motorola",
+    "remote": "github",
+    "branch" : "thirteen-plus"
+  }
+  {
+    "repository": "schqiushui/android_vendor_motorola_sm8350-common",
+    "target_path": "vendor/motorola/sm8350-common",
+    "remote": "github",
     "branch": "thirteen"
   },
-  {
-    "repository": "hardware_motorola",
-    "target_path": "hardware/motorola",
-    "remote": "pixel",
-    "branch" : "thirteen"
-  }
 ]
