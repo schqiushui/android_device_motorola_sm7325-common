@@ -17,7 +17,3 @@ vendor.zui.hardware.ifaa::IIFAADevice                                   u:object
 
 # Soter
 vendor.qti.hardware.soter::ISoter                                       u:object_r:vendor_hal_soter_hwservice:s0
-
-# NFC
-vendor.nxp.nxpese::INxpEse                                              u:object_r:nxpese_hwservice:s0
-vendor.nxp.nxpnfc::INxpNfc                                              u:object_r:nxpnfc_hwservice:s0
