@@ -743,6 +743,7 @@ vendor/bin/adpl
 vendor/bin/hw/qcrilNrd
 vendor/bin/ks
 vendor/bin/mbm_spy
+vendor/bin/netmgrd
 vendor/bin/pd-mapper
 vendor/bin/port-bridge
 vendor/bin/qmi_motext_hook
@@ -881,9 +882,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-
-# RIL - Data - from tundra_cn 13 T1SJC33.51-19-7
-vendor/bin/netmgrd|85718e6eac96b393848a4c70f3dc31acbb2f4374
 
 # Ril - IMS 
 system/etc/permissions/moto-ims-ext.xml:system_ext/etc/permissions/moto-ims-ext.xml
