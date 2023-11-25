@@ -204,6 +204,9 @@ PRODUCT_PACKAGES += \
     gnss@2.0-xtwifi-client.policy \
     gnss@2.0-xtwifi-inet-agent.policy \
     libbatching \
+    liblocdiagiface \
+    libloc_net_iface \
+    libloc_net_iface.vendor \
     libgeofencing \
     libgnss \
     libgnsspps \
