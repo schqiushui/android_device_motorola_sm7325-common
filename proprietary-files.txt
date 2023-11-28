@@ -889,6 +889,8 @@ system/etc/permissions/moto-ims-ext.xml:system_ext/etc/permissions/moto-ims-ext.
 system/etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
 system/framework/moto-ims-ext.jar:system_ext/framework/moto-ims-ext.jar
 system/framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
+system_ext/framework/qcom-moto-ims-ext.jar
+system_ext/framework/qcom-moto-telephony-ext.jar
 
 # RIL - IMS
 -system_ext/app/ImsRcsService/ImsRcsService.apk
