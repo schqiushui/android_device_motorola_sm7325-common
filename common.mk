@@ -246,6 +246,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.chg_policy.sh \
     init.qti.kernel.sh \
+    init.qti.media.sh \
     init.qti.qcv.sh \
     vendor_modprobe.sh
 
@@ -256,6 +257,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qti.kernel.rc \
     init.target.rc \
+    init.qti.media.rc \
     init.qti.qcv.rc
 
 PRODUCT_COPY_FILES += \
@@ -287,10 +289,6 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.motorola
 
 # Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/init.qti.media.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.media.sh \
-    $(LOCAL_PATH)/media/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
