@@ -108,6 +108,12 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.qti.media.sh",
+    src: "bin/init.qti.media.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qti.qcv.sh",
     src: "bin/init.qti.qcv.sh",
     vendor: true,
@@ -163,9 +169,15 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.qti.media.rc",
+    src: "etc/init.qti.media.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.qti.qcv.rc",
     src: "etc/init.qti.qcv.rc",
     sub_dir: "init",
     vendor: true,
 }
-
