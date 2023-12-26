@@ -258,7 +258,8 @@ PRODUCT_PACKAGES += \
     init.qti.kernel.rc \
     init.target.rc \
     init.qti.media.rc \
-    init.qti.qcv.rc
+    init.qti.qcv.rc \
+    init.recovery.qcom.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
