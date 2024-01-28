@@ -1,12 +1,12 @@
 # Charge only mode configuration
 import /vendor/etc/init/hw/init.mmi.charge_only.rc
 
+on early-init
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules exfat
+
 on post-fs
     # MOT_LED_CALIBRATION
     chown camera camera /mnt/vendor/persist/camera/mot_ledcal
-
-on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules exfat
 
 on property:ro.boot.default_usb_mode=device && property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
@@ -23,12 +23,9 @@ on early-boot
 on early-boot && property:ro.boot.bm_ulog_enabled=1
     write /sys/module/bm_adsp_ulog/parameters/debug_enabled 1
 
-on charger && property:ro.boot.bm_ulog_enabled=1
+on moto-charger && property:ro.boot.bm_ulog_enabled=1
     write /sys/module/bm_adsp_ulog/parameters/debug_enabled 1
 
 on property:sys.boot_completed=1
     write /sys/devices/platform/soc/soc:mmi,charger/state_sync 1
-
-on property:dev.bootcomplete=1
-    stop llkd-${ro.debuggable:-0}
 
