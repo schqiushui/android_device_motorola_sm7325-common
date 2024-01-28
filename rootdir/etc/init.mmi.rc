@@ -132,14 +132,6 @@ on post-fs
     chown radio radio /sys/class/capsense/calibrate
     chmod 0660 /sys/class/capsense/calibrate
 
-    # Zram
-    setprop ro.zram.mark_idle_delay_mins 60
-    setprop ro.zram.first_wb_delay_mins 1440
-    setprop ro.zram.periodic_wb_delay_hours 24
-    write /sys/block/zram0/comp_algorithm lz4
-    write /proc/sys/vm/swappiness 100
-    setprop sys.sysctl.swappiness 100
-
 on post-fs-data
     # Setup folders for security
     mkdir /mnt/vendor/persist/security 02770 drmrpc drmrpc
@@ -272,6 +264,12 @@ on boot
 
  # Change ownership and permission for leds backlight
    chmod 0664 /sys/class/leds/lcd-backlight/brightness
+   chown system system /sys/class/leds/charging/brightness
+   chmod 0664 /sys/class/leds/charging/brightness
+
+   # change permission of red leds
+   chown system system /sys/class/leds/red/brightness
+   chmod 0664 /sys/class/leds/red/brightness
 
    # Change ownership and permission for vibrator
    chown system system /sys/class/timed_output/vibrator/enable
@@ -293,14 +291,14 @@ on boot
    chown audio audio /sys/kernel/aov/register
    chown audio audio /sys/kernel/aov/event
 
+   # Quiet binder logs
+   write /sys/module/binder/parameters/debug_mask 0x5
+
    # Clear cooldown state
    mkdir /mnt/vendor/persist/chargeonly 0770 system system
    write /mnt/vendor/persist/chargeonly/cooldown n
    chown system system /mnt/vendor/persist/chargeonly/cooldown
    chmod 0660 /mnt/vendor/persist/chargeonly/cooldown
-
-   # Quiet binder logs
-   write /sys/module/binder/parameters/debug_mask 0x5
 
    # Change owner ship of l5 laser calibration
    chown camera vendor_tcmd /mnt/vendor/persist/camera/focus/offset_cal
@@ -397,6 +395,16 @@ service vendor.charge_only_mode /vendor/bin/charge_only_mode
     user root
     group graphics system input
     capabilities SYS_BOOT
+    disabled
+
+service vendor.thermal-com /vendor/bin/thermal-engine --minimode
+    class main
+    user root
+    group root system oem_2907
+    socket thermal-send-client stream 0666 system oem_2907
+    socket thermal-recv-client stream 0660 system oem_2907
+    socket thermal-recv-passive-client stream 0666 system oem_2907
+    socket thermal-send-rule stream 0660 system oem_2907
     disabled
 
 # bugreport is triggered by holding down volume down, volume up and power
