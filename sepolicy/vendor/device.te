@@ -1,3 +1,6 @@
+# Camera
+type cci_intf_device, dev_type;
+
 # Fingerprint
 type egis_device, dev_type;
 type etsd_device, dev_type;

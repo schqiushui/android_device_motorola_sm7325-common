@@ -9,6 +9,13 @@ allow hal_camera_default vendor_sysfs_laser:file rw_file_perms;
 allow hal_camera_default input_device:chr_file r_file_perms;
 allow hal_camera_default input_device:dir r_dir_perms;
 
+
+allow hal_camera_default gpu_device:chr_file rw_file_perms;
+allow hal_camera_default vendor_sysfs_graphics:lnk_file r_file_perms;
+allow hal_camera_default cci_intf_device:chr_file rw_file_perms;
+
+
+r_dir_file(hal_camera_default, vendor_sysfs_graphics)
 r_dir_file(hal_camera_default, vendor_sysfs_input)
 r_dir_file(hal_camera_default, vendor_persist_camera_file)
 r_dir_file(hal_camera_default, vendor_sysfs_battery_supply)
@@ -25,7 +32,7 @@ hal_client_domain(hal_camera_default, hal_cameradesktop)
 get_prop(hal_camera_default, moto_camera_config_prop)
 
 allow hal_camera vendor_imager_data_file:dir rw_dir_perms;
-allow hal_camera vendor_imager_data_file:file rw_file_perms;
+allow hal_camera vendor_imager_data_file:file create_file_perms;
 
 allow hal_camera_default vendor_imager_metadata_file:dir rw_dir_perms;
-allow hal_camera_default vendor_imager_metadata_file:file rw_file_perms;
+allow hal_camera_default vendor_imager_metadata_file:file create_file_perms;
