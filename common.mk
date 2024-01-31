@@ -412,6 +412,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+PRODUCT_COPY_FILES += \
+    system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.moto-libperfmgr
