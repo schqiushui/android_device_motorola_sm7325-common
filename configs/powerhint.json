@@ -360,7 +360,7 @@
       "PowerHint": "INTERACTION",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "540000000"
+      "Value": "315000000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -558,7 +558,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "540000000"
+      "Value": "315000000"
     },
     {
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",
