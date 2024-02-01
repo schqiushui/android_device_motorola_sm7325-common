@@ -326,6 +326,15 @@ on charger
     class_stop main
     class_stop late_start
 
+service vendor.batt_health /vendor/bin/batt_health
+    class late_start
+    user vendor_pwric
+    group vendor_pwric cache net_admin log
+    disabled
+
+on property:sys.boot_completed=1
+    start vendor.batt_health
+
 on property:sys.boot_completed=1 && property:ro.vendor.zram.product_swapon=""
     write /proc/sys/vm/page-cluster 0
     swapon_all /vendor/etc/fstab.qcom
