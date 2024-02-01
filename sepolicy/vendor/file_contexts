@@ -23,6 +23,10 @@
 # Awinic
 /(mnt/vendor/persist|persist)/factory/audio/aw_cali.bin u:object_r:vendor_persist_audio_file:s0
 
+# batt_health
+/(vendor|system/vendor)/bin/batt_health                 u:object_r:batt_health_exec:s0
+/(mnt/vendor/persist|persist)/batt_health(/.*)?         u:object_r:pds_batt_file:s0
+
 # Camera
 /dev/cci_intf                                           u:object_r:cci_intf_device:s0
 /data/vendor/misc/imager(/.*)?                          u:object_r:vendor_imager_data_file:s0

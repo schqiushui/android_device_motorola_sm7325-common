@@ -1,0 +1,44 @@
+type batt_health, domain;
+type batt_health_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(batt_health);
+
+# Read batt_health file
+allow batt_health batt_health_exec:file {rx_file_perms entrypoint};
+
+# Self permissions
+allow batt_health self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+# Allow access to mnt_vendor_file
+allow batt_health mnt_vendor_file:dir search;
+allow batt_health mnt_vendor_file:lnk_file read;
+
+# Allow access to pds_batt_file
+allow batt_health pds_batt_file:dir rw_dir_perms;
+allow batt_health pds_batt_file:file create_file_perms;
+
+# Allow access to sysfs
+allow batt_health sysfs:dir r_dir_perms;
+allow batt_health sysfs:file r_file_perms;
+allow batt_health sysfs:lnk_file r_file_perms;
+
+# Allow access to battery info sysfs
+allow batt_health sysfs_batteryinfo:dir r_dir_perms;
+allow batt_health sysfs_batteryinfo:file r_file_perms;
+allow batt_health sysfs_batteryinfo:lnk_file r_file_perms;
+
+# Allow access to block device sysfs
+allow charge_only block_device:dir r_dir_perms;
+
+# Allow access to thermal sysfs
+allow batt_health sysfs_thermal:dir r_dir_perms;
+allow batt_health sysfs_thermal:file r_file_perms;
+allow batt_health sysfs_thermal:lnk_file r_file_perms;
+
+# Allow access to battery supply sysfs
+allow batt_health vendor_sysfs_battery_supply:dir r_dir_perms;
+allow batt_health vendor_sysfs_battery_supply:file r_file_perms;
+allow batt_health vendor_sysfs_battery_supply:lnk_file r_file_perms;
+
+# Allow access to usb supply sysfs
+allow batt_health vendor_sysfs_usb_supply:dir r_dir_perms;
+allow batt_health vendor_sysfs_usb_supply:file r_file_perms;
