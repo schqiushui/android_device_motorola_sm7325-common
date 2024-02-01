@@ -32,3 +32,7 @@ allow init proc:file w_file_perms;
 
 # Allow init to access batt_health
 allow init batt_health_exec:file { r_file_perms execute };
+
+# Allow init to access charge_only_mode
+allow init charge_only_exec:file { r_file_perms execute };
+
