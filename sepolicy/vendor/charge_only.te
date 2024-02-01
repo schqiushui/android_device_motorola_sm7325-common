@@ -87,6 +87,9 @@ allow charge_only graphics_device:chr_file rw_file_perms;
 allow charge_only input_device:dir r_dir_perms;
 allow charge_only input_device:chr_file rw_file_perms;
 
+# Allow access to tty dev
+allow charge_only tty_device:chr_file rw_file_perms;
+
 # Allow access to rtc dev
 allow charge_only rtc_device:chr_file rw_file_perms;
 
