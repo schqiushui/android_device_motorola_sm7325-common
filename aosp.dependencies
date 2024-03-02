@@ -1,20 +1,20 @@
 [
   {
-    "repository" : "schqiushui/android_kernel_motorola_sm8350",
-    "target_path" : "kernel/motorola/sm8350",
-    "remote" : "github",
-    "branch" : "thirteen-plus"
-  },
-  {
     "repository": "PixelExperiencePlus/PixelExperience_hardware_motorola",
     "target_path": "hardware/motorola",
     "remote": "github",
-    "branch" : "thirteen-plus"
-  }
+    "branch" : "fourteen"
+  },
+  {
+    "repository" : "schqiushui/android_kernel_motorola_sm8350",
+    "target_path" : "kernel/motorola/sm8350",
+    "remote" : "github",
+    "branch" : "fourteen"
+  },
   {
     "repository": "schqiushui/android_vendor_motorola_sm8350-common",
     "target_path": "vendor/motorola/sm8350-common",
     "remote": "github",
-    "branch": "thirteen"
-  },
+    "branch": "fourteen"
+  }
 ]
