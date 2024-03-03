@@ -269,6 +269,7 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
+    init.qcom.usb.sh \
     init.qti.chg_policy.sh \
     init.qti.kernel.sh \
     init.qti.media.sh \
@@ -280,6 +281,7 @@ PRODUCT_PACKAGES += \
     init.mmi.chipset.rc \
     init.mmi.rc \
     init.qcom.rc \
+    init.qcom.usb.rc \
     init.qti.kernel.rc \
     init.target.rc \
     init.qti.media.rc \
@@ -525,12 +527,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh
-
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/usb/etc
+    android.hardware.usb@1.3-service-qti
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
