@@ -7,7 +7,7 @@ type vendor_imager_data_file, file_type, data_file_type;
 type vendor_imager_metadata_file, file_type, data_file_type;
 
 # charge_only_mode
-type chargeonly_data_file, file_type, data_file_type;
+type chargeonly_vendor_data_file, file_type, data_file_type;
 type persist_chargeonly_file, file_type, data_file_type;
 
 # Cutback

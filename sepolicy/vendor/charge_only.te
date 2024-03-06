@@ -5,9 +5,9 @@ init_daemon_domain(charge_only)
 # Read chargeonly_data_file
 allow charge_only charge_only_exec:file {rx_file_perms entrypoint};
 
-# Read chargeonly_data_file
-allow charge_only chargeonly_data_file:dir rw_dir_perms;
-allow charge_only chargeonly_data_file:file create_file_perms;
+# Read chargeonly_vendor_data_file
+allow charge_only chargeonly_vendor_data_file:dir rw_dir_perms;
+allow charge_only chargeonly_vendor_data_file:file create_file_perms;
 
 # Write to /dev/kmsg
 allow charge_only kmsg_device:chr_file rw_file_perms;
