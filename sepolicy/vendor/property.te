@@ -12,8 +12,5 @@ vendor_restricted_prop(vendor_aware_available_prop);
 # Dolby
 vendor_restricted_prop(vendor_mot_dolby_prop);
 
-# Power
-vendor_internal_prop(vendor_power_prop)
-
 # Secure Element
 vendor_internal_prop(vendor_secure_element_prop);
