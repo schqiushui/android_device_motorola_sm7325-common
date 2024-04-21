@@ -589,6 +589,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# Use Scudo instead of Jemalloc
+PRODUCT_USE_SCUDO := true
+
 # Inherit extra stuff
 $(call inherit-product-if-exists,vendor/motorola-extra/config.mk)
 
