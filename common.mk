@@ -592,8 +592,5 @@ PRODUCT_BOOT_JARS += \
 # Use Scudo instead of Jemalloc
 PRODUCT_USE_SCUDO := true
 
-# Inherit extra stuff
-$(call inherit-product-if-exists,vendor/motorola-extra/config.mk)
-
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/sm8350-common/sm8350-common-vendor.mk)
